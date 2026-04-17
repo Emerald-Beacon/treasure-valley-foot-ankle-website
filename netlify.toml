@@ -3,12 +3,9 @@
 
 [build]
   # Directory to publish (root since it's a static site)
-  publish = "."
+  publish = "/"
 
-  # No build command needed for static HTML/CSS/JS
-  command = ""
-
-# Redirects and headers
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -16,13 +13,6 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-
-# Handle SPA routing (not needed for this static site, but good practice)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
 
 # Cache static assets
 [[headers]]
