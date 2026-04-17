@@ -1087,20 +1087,24 @@ select {
    Testimonials Section
    ---------------------------------------- */
 .testimonials {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    color: white;
+    background: var(--color-bg-alt);
+}
+
+.testimonials__widget {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .testimonials .section__subtitle {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-primary);
 }
 
 .testimonials .section__title {
-    color: white;
+    color: var(--color-text);
 }
 
 .testimonials .section__description {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-text-light);
 }
 
 .testimonials__grid {
