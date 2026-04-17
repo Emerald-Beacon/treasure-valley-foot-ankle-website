@@ -371,16 +371,18 @@ select {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    min-width: 240px;
+    min-width: 280px;
     background: white;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-xl);
-    padding: var(--space-3) 0;
+    padding: var(--space-2) 0;
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition-fast);
     z-index: 1002;
     margin-top: var(--space-2);
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
 }
 
 .nav__item--dropdown:hover .nav__dropdown {
@@ -399,9 +401,58 @@ select {
     border-bottom: 8px solid white;
 }
 
+/* Dropdown Categories */
+.nav__dropdown-category {
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: var(--space-1);
+    margin-bottom: var(--space-1);
+}
+
+.nav__dropdown-category:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.nav__category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.nav__category-header:hover {
+    background: var(--color-bg-alt);
+}
+
+.nav__category-header svg {
+    width: 14px;
+    height: 14px;
+    transition: transform var(--transition-fast);
+}
+
+.nav__dropdown-category.active .nav__category-header svg {
+    transform: rotate(180deg);
+}
+
+.nav__category-items {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition);
+}
+
+.nav__dropdown-category.active .nav__category-items {
+    max-height: 500px;
+}
+
 .nav__dropdown-item {
     display: block;
-    padding: var(--space-2) var(--space-5);
+    padding: var(--space-2) var(--space-4) var(--space-2) var(--space-6);
     font-size: var(--text-sm);
     color: var(--color-text-light);
     transition: all var(--transition-fast);
@@ -493,12 +544,23 @@ select {
     }
 
     .nav__item--dropdown.active .nav__dropdown {
-        max-height: 1000px;
+        max-height: 2000px;
+    }
+
+    .nav__dropdown-category {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .nav__category-header {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--text-base);
     }
 
     .nav__dropdown-item {
-        padding-left: var(--space-6);
-        font-size: var(--text-base);
+        padding-left: var(--space-8);
+        font-size: var(--text-sm);
     }
 
     .nav__dropdown-toggle svg {

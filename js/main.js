@@ -83,6 +83,23 @@ dropdownToggles.forEach(toggle => {
 });
 
 // ========================================
+// Category Toggles (within Services dropdown)
+// ========================================
+
+/**
+ * Toggle category sub-menus within the dropdown
+ */
+const categoryHeaders = document.querySelectorAll('.nav__category-header');
+
+categoryHeaders.forEach(header => {
+    header.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const category = header.parentElement;
+        category.classList.toggle('active');
+    });
+});
+
+// ========================================
 // Header Scroll Effect
 // ========================================
 
