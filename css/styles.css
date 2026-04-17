@@ -344,6 +344,74 @@ select {
     width: 100%;
 }
 
+/* Dropdown Menu */
+.nav__item--dropdown {
+    position: relative;
+}
+
+.nav__dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    cursor: pointer;
+}
+
+.nav__dropdown-toggle svg {
+    width: 16px;
+    height: 16px;
+    transition: transform var(--transition-fast);
+}
+
+.nav__item--dropdown:hover .nav__dropdown-toggle svg {
+    transform: rotate(180deg);
+}
+
+.nav__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 240px;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xl);
+    padding: var(--space-3) 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-fast);
+    z-index: 1002;
+    margin-top: var(--space-2);
+}
+
+.nav__item--dropdown:hover .nav__dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__dropdown::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+}
+
+.nav__dropdown-item {
+    display: block;
+    padding: var(--space-2) var(--space-5);
+    font-size: var(--text-sm);
+    color: var(--color-text-light);
+    transition: all var(--transition-fast);
+}
+
+.nav__dropdown-item:hover {
+    background: var(--color-bg-alt);
+    color: var(--color-primary);
+}
+
 .nav__actions {
     display: flex;
     align-items: center;
@@ -404,6 +472,41 @@ select {
 
     .nav__link {
         font-size: var(--text-lg);
+    }
+
+    .nav__dropdown {
+        position: static;
+        transform: none;
+        min-width: 100%;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 0;
+        opacity: 1;
+        visibility: visible;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height var(--transition);
+    }
+
+    .nav__dropdown::before {
+        display: none;
+    }
+
+    .nav__item--dropdown.active .nav__dropdown {
+        max-height: 1000px;
+    }
+
+    .nav__dropdown-item {
+        padding-left: var(--space-6);
+        font-size: var(--text-base);
+    }
+
+    .nav__dropdown-toggle svg {
+        transition: transform var(--transition-fast);
+    }
+
+    .nav__item--dropdown.active .nav__dropdown-toggle svg {
+        transform: rotate(180deg);
     }
 
     .nav__close {

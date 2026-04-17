@@ -63,6 +63,26 @@ document.addEventListener('click', (e) => {
 });
 
 // ========================================
+// Services Dropdown (Mobile)
+// ========================================
+
+/**
+ * Toggle dropdown menu on mobile
+ */
+const dropdownToggles = document.querySelectorAll('.nav__dropdown-toggle');
+
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        // Only handle click for mobile (when menu is in mobile mode)
+        if (window.innerWidth <= 992) {
+            e.preventDefault();
+            const parent = toggle.parentElement;
+            parent.classList.toggle('active');
+        }
+    });
+});
+
+// ========================================
 // Header Scroll Effect
 // ========================================
 
