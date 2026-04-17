@@ -286,8 +286,9 @@ select {
 }
 
 .nav__logo-img {
-    height: 85px;
+    height: 70px;
     width: auto;
+    max-width: 280px;
     transition: transform var(--transition-fast);
 }
 
