@@ -463,6 +463,15 @@ select {
     color: var(--color-primary);
 }
 
+/* Simple dropdown without categories */
+.nav__dropdown--simple {
+    min-width: 220px;
+}
+
+.nav__dropdown--simple .nav__dropdown-item {
+    padding-left: var(--space-4);
+}
+
 .nav__actions {
     display: flex;
     align-items: center;
