@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="New patient intake form for Treasure Valley Foot & Ankle. Complete your paperwork online before your first visit with Dr. Clark Johnson in Meridian, Idaho.">
+    <meta name="keywords" content="new patient intake, patient forms, podiatry paperwork, Meridian Idaho, Treasure Valley Foot and Ankle">
+    <title>New Patient Intake | Treasure Valley Foot & Ankle</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/real/favicon.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="images/tvfa-logo-horizontal.avif" alt="Treasure Valley Foot & Ankle" class="nav__logo-img">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="index.html#services" class="nav__link nav__dropdown-toggle">
+                            Services
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <div class="nav__dropdown">
+                            <div class="nav__dropdown-category active">
+                                <div class="nav__category-header">
+                                    Heel & Arch
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="nav__category-items">
+                                    <a href="services/heel-pain.html" class="nav__dropdown-item">Heel Pain</a>
+                                    <a href="services/plantar-fasciitis.html" class="nav__dropdown-item">Plantar Fasciitis</a>
+                                    <a href="services/heel-spurs.html" class="nav__dropdown-item">Heel Spurs</a>
+                                    <a href="services/heel-injections.html" class="nav__dropdown-item">Heel Injections</a>
+                                    <a href="services/haglunds-deformity.html" class="nav__dropdown-item">Haglund's Deformity</a>
+                                </div>
+                            </div>
+                            <div class="nav__dropdown-category">
+                                <div class="nav__category-header">
+                                    Tendons & Soft Tissue
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="nav__category-items">
+                                    <a href="services/achilles-tendonitis.html" class="nav__dropdown-item">Achilles Tendonitis</a>
+                                    <a href="services/peroneal-tendon-injuries.html" class="nav__dropdown-item">Peroneal Tendon Injuries</a>
+                                    <a href="services/posterior-tibial-tendonitis.html" class="nav__dropdown-item">Posterior Tibial Tendonitis</a>
+                                </div>
+                            </div>
+                            <div class="nav__dropdown-category">
+                                <div class="nav__category-header">
+                                    Toes & Forefoot
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="nav__category-items">
+                                    <a href="services/bunion-treatment.html" class="nav__dropdown-item">Bunion Treatment</a>
+                                    <a href="services/neuroma.html" class="nav__dropdown-item">Morton's Neuroma</a>
+                                    <a href="services/achilles-tendonitis.html" class="nav__dropdown-item">Tendinitis</a>
+                                    <a href="services/hallux-rigidus.html" class="nav__dropdown-item">Hallux Rigidus</a>
+                                    <a href="services/metatarsal-fractures.html" class="nav__dropdown-item">Metatarsal Fractures</a>
+                                </div>
+                            </div>
+                            <div class="nav__dropdown-category">
+                                <div class="nav__category-header">
+                                    Ankle Conditions
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="nav__category-items">
+                                    <a href="services/ankle-arthritis.html" class="nav__dropdown-item">Ankle Arthritis</a>
+                                    <a href="services/lateral-ankle-instability.html" class="nav__dropdown-item">Lateral Ankle Instability</a>
+                                    <a href="services/talar-dome-lesions.html" class="nav__dropdown-item">Talar Dome Lesions</a>
+                                    <a href="services/tarsal-tunnel-syndrome.html" class="nav__dropdown-item">Tarsal Tunnel Syndrome</a>
+                                    <a href="services/lisfranc-injuries.html" class="nav__dropdown-item">Lisfranc Injuries</a>
+                                </div>
+                            </div>
+                            <div class="nav__dropdown-category">
+                                <div class="nav__category-header">
+                                    General Care
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="nav__category-items">
+                                    <a href="services/diabetic-foot-care.html" class="nav__dropdown-item">Diabetic Foot Care</a>
+                                    <a href="services/gout-treatment.html" class="nav__dropdown-item">Gout Treatment</a>
+                                    <a href="services/custom-orthotics.html" class="nav__dropdown-item">Orthotics</a>
+                                    <a href="services/foot-ankle-injuries.html" class="nav__dropdown-item">Foot & Ankle Injuries</a>
+                                    <a href="services/foot-ankle-surgery.html" class="nav__dropdown-item">Foot & Ankle Surgery</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#" class="nav__link nav__dropdown-toggle">
+                            Procedures
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <div class="nav__dropdown nav__dropdown--simple">
+                            <a href="procedures/lapifuse-bunionectomy.html" class="nav__dropdown-item">Lapifuse Bunionectomy</a>
+                            <a href="procedures/decompression-osteotomies.html" class="nav__dropdown-item">Decompression Osteotomies</a>
+                            <a href="procedures/minimally-invasive-surgery.html" class="nav__dropdown-item">Minimally Invasive Surgery</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#insurance" class="nav__link">Insurance</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="meet-the-doctor.html" class="nav__link">Meet Dr. Johnson</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="new-patient-intake.html" class="nav__link active">New Patient</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:208-272-9253" class="nav__phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>(208) 272-9253</span>
+                </a>
+                <a href="contact.html" class="btn btn--primary nav__cta">Book Appointment</a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Intake Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero__breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>New Patient Intake</span>
+            </div>
+            <h1 class="contact-hero__title">New Patient Intake</h1>
+            <p class="contact-hero__description">
+                Save time at your first visit by completing your intake paperwork online.
+                All information is kept strictly confidential and reviewed only by Dr. Johnson
+                and our clinical staff. If you'd prefer, you can
+                <a href="forms/patient-intake.pdf" target="_blank" rel="noopener noreferrer" class="intake-pdf-link">download the PDF version</a>
+                to print and bring with you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Intake Form -->
+    <section class="intake-page section">
+        <div class="container container--narrow">
+            <form
+                class="intake-form"
+                id="intake-form"
+                name="new-patient-intake"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                novalidate>
+                <input type="hidden" name="form-name" value="new-patient-intake">
+                <p class="intake-honeypot" aria-hidden="true">
+                    <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                </p>
+
+                <!-- Patient Information -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Patient Information</legend>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="last-name" class="form__label">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" class="form__input" required autocomplete="family-name">
+                        </div>
+                        <div class="form__group">
+                            <label for="first-name" class="form__label">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" class="form__input" required autocomplete="given-name">
+                        </div>
+                    </div>
+
+                    <div class="form__row form__row--3">
+                        <div class="form__group">
+                            <label for="age" class="form__label">Age</label>
+                            <input type="number" id="age" name="age" class="form__input" min="0" max="120">
+                        </div>
+                        <div class="form__group">
+                            <label for="dob" class="form__label">Date of Birth *</label>
+                            <input type="date" id="dob" name="dob" class="form__input" required autocomplete="bday">
+                        </div>
+                        <div class="form__group">
+                            <span class="form__label">Sex</span>
+                            <div class="intake-radio-row">
+                                <label class="intake-radio"><input type="radio" name="sex" value="male"> <span>Male</span></label>
+                                <label class="intake-radio"><input type="radio" name="sex" value="female"> <span>Female</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="ssn" class="form__label">Social Security #</label>
+                        <input type="text" id="ssn" name="ssn" class="form__input" inputmode="numeric" placeholder="XXX-XX-XXXX" autocomplete="off">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="address" class="form__label">Mailing Address *</label>
+                        <input type="text" id="address" name="address" class="form__input" required autocomplete="street-address">
+                    </div>
+
+                    <div class="form__row form__row--3">
+                        <div class="form__group">
+                            <label for="city" class="form__label">City *</label>
+                            <input type="text" id="city" name="city" class="form__input" required autocomplete="address-level2">
+                        </div>
+                        <div class="form__group">
+                            <label for="state" class="form__label">State *</label>
+                            <input type="text" id="state" name="state" class="form__input" required maxlength="2" placeholder="ID" autocomplete="address-level1">
+                        </div>
+                        <div class="form__group">
+                            <label for="zip" class="form__label">ZIP *</label>
+                            <input type="text" id="zip" name="zip" class="form__input" required autocomplete="postal-code">
+                        </div>
+                    </div>
+
+                    <div class="form__row form__row--3">
+                        <div class="form__group">
+                            <label for="phone-cell" class="form__label">Cell Phone</label>
+                            <input type="tel" id="phone-cell" name="phone-cell" class="form__input" autocomplete="tel">
+                        </div>
+                        <div class="form__group">
+                            <label for="phone-home" class="form__label">Home Phone</label>
+                            <input type="tel" id="phone-home" name="phone-home" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="phone-work" class="form__label">Work Phone</label>
+                            <input type="tel" id="phone-work" name="phone-work" class="form__input">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <span class="form__label">Preferred Phone *</span>
+                        <div class="intake-radio-row">
+                            <label class="intake-radio"><input type="radio" name="preferred-phone" value="cell" required> <span>Cell</span></label>
+                            <label class="intake-radio"><input type="radio" name="preferred-phone" value="home"> <span>Home</span></label>
+                            <label class="intake-radio"><input type="radio" name="preferred-phone" value="work"> <span>Work</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email *</label>
+                        <input type="email" id="email" name="email" class="form__input" required autocomplete="email">
+                    </div>
+
+                    <div class="form__row form__row--3">
+                        <div class="form__group">
+                            <label for="emergency-name" class="form__label">Emergency Contact</label>
+                            <input type="text" id="emergency-name" name="emergency-name" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="emergency-phone" class="form__label">Emergency Phone</label>
+                            <input type="tel" id="emergency-phone" name="emergency-phone" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="emergency-relationship" class="form__label">Relationship</label>
+                            <input type="text" id="emergency-relationship" name="emergency-relationship" class="form__input">
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="minor-responsible-name" class="form__label">If minor: Responsible Party</label>
+                            <input type="text" id="minor-responsible-name" name="minor-responsible-name" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="minor-relationship" class="form__label">Relationship to Minor</label>
+                            <input type="text" id="minor-relationship" name="minor-relationship" class="form__input">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="referral-source" class="form__label">How did you hear about us?</label>
+                        <input type="text" id="referral-source" name="referral-source" class="form__input">
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="pcp-name" class="form__label">Primary Care Physician</label>
+                            <input type="text" id="pcp-name" name="pcp-name" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="pcp-phone" class="form__label">PCP Phone</label>
+                            <input type="tel" id="pcp-phone" name="pcp-phone" class="form__input">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="authorized-persons" class="form__label">Persons authorized to access my medical information</label>
+                        <textarea id="authorized-persons" name="authorized-persons" class="form__textarea" rows="2"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Insurance -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Insurance</legend>
+
+                    <h3 class="intake-subsection__title">Primary Insurance</h3>
+                    <div class="form__row form__row--3">
+                        <div class="form__group">
+                            <label for="ins-company" class="form__label">Company</label>
+                            <input type="text" id="ins-company" name="ins-company" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="ins-id" class="form__label">ID #</label>
+                            <input type="text" id="ins-id" name="ins-id" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="ins-group" class="form__label">Group/Policy #</label>
+                            <input type="text" id="ins-group" name="ins-group" class="form__input">
+                        </div>
+                    </div>
+
+                    <div class="form__row form__row--3">
+                        <div class="form__group">
+                            <label for="ins-holder-name" class="form__label">Policy Holder Name</label>
+                            <input type="text" id="ins-holder-name" name="ins-holder-name" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="ins-holder-ssn" class="form__label">Holder SS#</label>
+                            <input type="text" id="ins-holder-ssn" name="ins-holder-ssn" class="form__input" placeholder="XXX-XX-XXXX">
+                        </div>
+                        <div class="form__group">
+                            <label for="ins-holder-dob" class="form__label">Holder DOB</label>
+                            <input type="date" id="ins-holder-dob" name="ins-holder-dob" class="form__input">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <span class="form__label">Is a referral required?</span>
+                        <div class="intake-radio-row">
+                            <label class="intake-radio"><input type="radio" name="referral-required" value="yes"> <span>Yes</span></label>
+                            <label class="intake-radio"><input type="radio" name="referral-required" value="no"> <span>No</span></label>
+                        </div>
+                        <p class="intake-help">Patient is responsible for obtaining referrals.</p>
+                    </div>
+
+                    <h3 class="intake-subsection__title">Secondary Insurance (if applicable)</h3>
+                    <div class="form__row form__row--3">
+                        <div class="form__group">
+                            <label for="ins2-company" class="form__label">Company</label>
+                            <input type="text" id="ins2-company" name="ins2-company" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="ins2-id" class="form__label">ID</label>
+                            <input type="text" id="ins2-id" name="ins2-id" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="ins2-group" class="form__label">Group</label>
+                            <input type="text" id="ins2-group" name="ins2-group" class="form__input">
+                        </div>
+                    </div>
+
+                    <div class="form__row form__row--3">
+                        <div class="form__group">
+                            <label for="ins2-holder-name" class="form__label">Policy Holder Name</label>
+                            <input type="text" id="ins2-holder-name" name="ins2-holder-name" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="ins2-holder-ssn" class="form__label">Holder SS#</label>
+                            <input type="text" id="ins2-holder-ssn" name="ins2-holder-ssn" class="form__input" placeholder="XXX-XX-XXXX">
+                        </div>
+                        <div class="form__group">
+                            <label for="ins2-relationship" class="form__label">Relationship to Patient</label>
+                            <input type="text" id="ins2-relationship" name="ins2-relationship" class="form__input">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Today's Problem -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Today's Problem</legend>
+
+                    <div class="form__group">
+                        <label for="problem-description" class="form__label">Describe today's problem(s) *</label>
+                        <textarea id="problem-description" name="problem-description" class="form__textarea" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="problem-duration" class="form__label">How long have you had the problem?</label>
+                        <input type="text" id="problem-duration" name="problem-duration" class="form__input" placeholder="e.g. 3 weeks, 6 months">
+                    </div>
+
+                    <div class="form__group">
+                        <span class="form__label">Rate the pain (0 = no pain, 10 = worst pain)</span>
+                        <div class="intake-pain-scale" role="radiogroup" aria-label="Pain scale 0 to 10">
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="0"><span>0</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="1"><span>1</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="2"><span>2</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="3"><span>3</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="4"><span>4</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="5"><span>5</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="6"><span>6</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="7"><span>7</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="8"><span>8</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="9"><span>9</span></label>
+                            <label class="intake-pain-scale__item"><input type="radio" name="pain-rating" value="10"><span>10</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="problem-worse" class="form__label">What makes the problem worse?</label>
+                        <textarea id="problem-worse" name="problem-worse" class="form__textarea" rows="2"></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="problem-better" class="form__label">What makes the problem better?</label>
+                        <textarea id="problem-better" name="problem-better" class="form__textarea" rows="2"></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="problem-tried" class="form__label">What have you tried to treat the problem?</label>
+                        <textarea id="problem-tried" name="problem-tried" class="form__textarea" rows="2"></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <span class="form__label">Location of today's problem(s) — check all that apply</span>
+                        <div class="intake-location-grid">
+                            <div class="intake-location-col">
+                                <h4 class="intake-location-col__title">Left Foot</h4>
+                                <label class="intake-checkbox"><input type="checkbox" name="location" value="left-top"> <span>Top of foot</span></label>
+                                <label class="intake-checkbox"><input type="checkbox" name="location" value="left-bottom"> <span>Bottom of foot</span></label>
+                                <label class="intake-checkbox"><input type="checkbox" name="location" value="left-inside"> <span>Inside of foot</span></label>
+                                <label class="intake-checkbox"><input type="checkbox" name="location" value="left-outside"> <span>Outside of foot</span></label>
+                            </div>
+                            <div class="intake-location-col">
+                                <h4 class="intake-location-col__title">Right Foot</h4>
+                                <label class="intake-checkbox"><input type="checkbox" name="location" value="right-top"> <span>Top of foot</span></label>
+                                <label class="intake-checkbox"><input type="checkbox" name="location" value="right-bottom"> <span>Bottom of foot</span></label>
+                                <label class="intake-checkbox"><input type="checkbox" name="location" value="right-inside"> <span>Inside of foot</span></label>
+                                <label class="intake-checkbox"><input type="checkbox" name="location" value="right-outside"> <span>Outside of foot</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Allergies & Medications -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Allergies & Medications</legend>
+
+                    <div class="form__group">
+                        <label for="allergies" class="form__label">Allergies / Sensitivities</label>
+                        <textarea id="allergies" name="allergies" class="form__textarea" rows="2" placeholder="List any drug, latex, food, or environmental allergies."></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="medications" class="form__label">Current Medications & Supplements</label>
+                        <p class="intake-help">List each medication on its own line with dose and frequency. If you have many, feel free to bring a printed list to your visit.</p>
+                        <textarea id="medications" name="medications" class="form__textarea" rows="6" placeholder="Example:&#10;Metformin 500 mg — twice daily&#10;Lisinopril 10 mg — once daily&#10;Vitamin D 1000 IU — once daily"></textarea>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="pharmacy-name" class="form__label">Preferred Pharmacy</label>
+                            <input type="text" id="pharmacy-name" name="pharmacy-name" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="pharmacy-location" class="form__label">Pharmacy Location</label>
+                            <input type="text" id="pharmacy-location" name="pharmacy-location" class="form__input">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Medical History -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Medical History</legend>
+                    <p class="intake-help">Please check any conditions you have personally experienced.</p>
+
+                    <label class="intake-checkbox intake-checkbox--emphasis">
+                        <input type="checkbox" name="no-major-illness">
+                        <span>No major illness or other prior medical conditions</span>
+                    </label>
+
+                    <div class="intake-conditions-grid">
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Cardiovascular</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Peripheral Artery Disease"> <span>Peripheral Artery Disease</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Peripheral Vein Disease"> <span>Peripheral Vein Disease</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="High Blood Pressure"> <span>High Blood Pressure</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="High Cholesterol"> <span>High Cholesterol</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Atrial Fibrillation/Arrhythmia"> <span>Atrial Fibrillation / Arrhythmia</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Heart Attack"> <span>Heart Attack</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Coronary Artery Disease"> <span>Coronary Artery Disease</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Congestive Heart Failure"> <span>Congestive Heart Failure</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Stroke/TIA"> <span>Stroke / TIA</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Respiratory</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Asthma"> <span>Asthma</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Bronchitis"> <span>Bronchitis</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="COPD"> <span>COPD</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Emphysema"> <span>Emphysema</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Gastrointestinal</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Reflux/Heartburn"> <span>Reflux / Heartburn</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Crohn's Disease"> <span>Crohn's Disease</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Ulcerative Colitis"> <span>Ulcerative Colitis</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Irritable Bowel Syndrome"> <span>Irritable Bowel Syndrome</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Bleeding Ulcers"> <span>Bleeding Ulcers</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Liver / Gall Bladder</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Cirrhosis"> <span>Cirrhosis</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Gall stones"> <span>Gall stones</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Dermatology</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Melanoma"> <span>Melanoma</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Squamous Cell Carcinoma"> <span>Squamous Cell Carcinoma</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Basal Cell Carcinoma"> <span>Basal Cell Carcinoma</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Kidney</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Kidney Disease"> <span>Kidney Disease</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Kidney Failure"> <span>Kidney Failure</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Kidney Infection"> <span>Kidney Infection</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Kidney Stone"> <span>Kidney Stone</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Endocrine</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Prediabetes"> <span>Prediabetes</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Diabetes (insulin dependent)"> <span>Diabetes (insulin dependent)</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Diabetes (non-insulin dependent)"> <span>Diabetes (non-insulin dependent)</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Chronic steroid use"> <span>Chronic steroid use</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Adrenal Disease"> <span>Adrenal Disease</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Thyroid Disease"> <span>Thyroid Disease</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Nervous / Psychiatric</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Seizure Disorder"> <span>Seizure Disorder</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Multiple Sclerosis"> <span>Multiple Sclerosis</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Parkinson's Disease"> <span>Parkinson's Disease</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Depression/Anxiety"> <span>Depression / Anxiety</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Peripheral Neuropathy"> <span>Peripheral Neuropathy</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Genitourinary</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Recurrent Urinary Tract Infections"> <span>Recurrent UTIs</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Prostate Enlargement"> <span>Prostate Enlargement</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Prostate Cancer"> <span>Prostate Cancer</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Rheumatology</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Rheumatoid Arthritis"> <span>Rheumatoid Arthritis</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Sjogren's Syndrome"> <span>Sjögren's Syndrome</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Raynaud's Syndrome"> <span>Raynaud's Syndrome</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Ehlers Danlos"> <span>Ehlers-Danlos</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Seronegative Arthropathy"> <span>Seronegative Arthropathy</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Hematologic</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Bleeding Disorder"> <span>Bleeding Disorder</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Clotting Disorder"> <span>Clotting Disorder</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Platelet Disorder"> <span>Platelet Disorder</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="DVT/Blood Clots"> <span>DVT / Blood Clots</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Immune</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="HIV"> <span>HIV</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Chronic Skin Infection"> <span>Chronic Skin Infection</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="MRSA"> <span>MRSA</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Hepatitis A"> <span>Hepatitis A</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Hepatitis B"> <span>Hepatitis B</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Hepatitis C"> <span>Hepatitis C</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="C. Difficile"> <span>C. Difficile</span></label>
+                        </div>
+
+                        <div class="intake-conditions-col">
+                            <h4 class="intake-conditions-col__title">Musculoskeletal</h4>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Fibromyalgia"> <span>Fibromyalgia</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Back/Neck Pain"> <span>Back / Neck Pain</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Osteoporosis/Osteopenia"> <span>Osteoporosis / Osteopenia</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Osteoarthritis"> <span>Osteoarthritis</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Gout"> <span>Gout</span></label>
+                            <label class="intake-checkbox"><input type="checkbox" name="cond" value="Cysts"> <span>Cysts</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="conditions-other" class="form__label">Other medical conditions not listed above</label>
+                        <textarea id="conditions-other" name="conditions-other" class="form__textarea" rows="2"></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="cancer-history" class="form__label">Cancer history (including type)</label>
+                        <input type="text" id="cancer-history" name="cancer-history" class="form__input">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="anesthesia-complications" class="form__label">Prior complications with anesthesia</label>
+                        <input type="text" id="anesthesia-complications" name="anesthesia-complications" class="form__input">
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <span class="form__label">Are you pregnant?</span>
+                            <div class="intake-radio-row">
+                                <label class="intake-radio"><input type="radio" name="pregnant" value="yes"> <span>Yes</span></label>
+                                <label class="intake-radio"><input type="radio" name="pregnant" value="no"> <span>No</span></label>
+                                <label class="intake-radio"><input type="radio" name="pregnant" value="na"> <span>N/A</span></label>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <span class="form__label">Are you nursing?</span>
+                            <div class="intake-radio-row">
+                                <label class="intake-radio"><input type="radio" name="nursing" value="yes"> <span>Yes</span></label>
+                                <label class="intake-radio"><input type="radio" name="nursing" value="no"> <span>No</span></label>
+                                <label class="intake-radio"><input type="radio" name="nursing" value="na"> <span>N/A</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Surgical History -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Surgical History</legend>
+                    <p class="intake-help">Please list all surgeries you have had.</p>
+
+                    <div class="intake-surgery-grid">
+                        <div class="intake-surgery-grid__header">
+                            <span>Surgery</span>
+                            <span>Year</span>
+                        </div>
+                        <div class="intake-surgery-row">
+                            <input type="text" name="surgery-1-name" class="form__input" aria-label="Surgery 1 name">
+                            <input type="text" name="surgery-1-year" class="form__input" aria-label="Surgery 1 year" inputmode="numeric" maxlength="4">
+                        </div>
+                        <div class="intake-surgery-row">
+                            <input type="text" name="surgery-2-name" class="form__input" aria-label="Surgery 2 name">
+                            <input type="text" name="surgery-2-year" class="form__input" aria-label="Surgery 2 year" inputmode="numeric" maxlength="4">
+                        </div>
+                        <div class="intake-surgery-row">
+                            <input type="text" name="surgery-3-name" class="form__input" aria-label="Surgery 3 name">
+                            <input type="text" name="surgery-3-year" class="form__input" aria-label="Surgery 3 year" inputmode="numeric" maxlength="4">
+                        </div>
+                        <div class="intake-surgery-row">
+                            <input type="text" name="surgery-4-name" class="form__input" aria-label="Surgery 4 name">
+                            <input type="text" name="surgery-4-year" class="form__input" aria-label="Surgery 4 year" inputmode="numeric" maxlength="4">
+                        </div>
+                        <div class="intake-surgery-row">
+                            <input type="text" name="surgery-5-name" class="form__input" aria-label="Surgery 5 name">
+                            <input type="text" name="surgery-5-year" class="form__input" aria-label="Surgery 5 year" inputmode="numeric" maxlength="4">
+                        </div>
+                        <div class="intake-surgery-row">
+                            <input type="text" name="surgery-6-name" class="form__input" aria-label="Surgery 6 name">
+                            <input type="text" name="surgery-6-year" class="form__input" aria-label="Surgery 6 year" inputmode="numeric" maxlength="4">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Family History -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Family History</legend>
+                    <p class="intake-help">Check any known health conditions in your family.</p>
+
+                    <div class="intake-family-grid">
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Alcoholism"> <span>Alcoholism</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Amputation"> <span>Amputation</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Anemia"> <span>Anemia</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Anxiety/Depression"> <span>Anxiety / Depression</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Arthritis"> <span>Arthritis</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Cancer"> <span>Cancer</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Diabetes Type 1"> <span>Diabetes Type 1</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Diabetes Type 2"> <span>Diabetes Type 2</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Heart Attack"> <span>Heart Attack</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="High Blood Pressure"> <span>High Blood Pressure</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Kidney Disease"> <span>Kidney Disease</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Peripheral Vascular Disease"> <span>Peripheral Vascular Disease</span></label>
+                        <label class="intake-checkbox"><input type="checkbox" name="family" value="Stroke"> <span>Stroke</span></label>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="family-other" class="form__label">Other family history</label>
+                        <input type="text" id="family-other" name="family-other" class="form__input">
+                    </div>
+                </fieldset>
+
+                <!-- Social History -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Social History</legend>
+
+                    <div class="intake-social-row">
+                        <span class="form__label intake-social-row__label">Tobacco Use</span>
+                        <div class="intake-radio-row">
+                            <label class="intake-radio"><input type="radio" name="tobacco-status" value="never"> <span>Never</span></label>
+                            <label class="intake-radio"><input type="radio" name="tobacco-status" value="quit"> <span>Quit</span></label>
+                            <label class="intake-radio"><input type="radio" name="tobacco-status" value="current"> <span>Current</span></label>
+                        </div>
+                        <input type="text" name="tobacco-year-quit" class="form__input form__input--sm" placeholder="Year quit">
+                        <input type="text" name="tobacco-packs" class="form__input form__input--sm" placeholder="Packs per day">
+                    </div>
+
+                    <div class="intake-social-row">
+                        <span class="form__label intake-social-row__label">Alcohol Use</span>
+                        <div class="intake-radio-row">
+                            <label class="intake-radio"><input type="radio" name="alcohol-status" value="never"> <span>Never</span></label>
+                            <label class="intake-radio"><input type="radio" name="alcohol-status" value="quit"> <span>Quit</span></label>
+                            <label class="intake-radio"><input type="radio" name="alcohol-status" value="current"> <span>Current</span></label>
+                        </div>
+                        <input type="text" name="alcohol-year-quit" class="form__input form__input--sm" placeholder="Year quit">
+                        <input type="text" name="alcohol-amount" class="form__input form__input--sm" placeholder="Amount / frequency">
+                    </div>
+
+                    <div class="intake-social-row">
+                        <span class="form__label intake-social-row__label">Drug Use</span>
+                        <div class="intake-radio-row">
+                            <label class="intake-radio"><input type="radio" name="drug-status" value="never"> <span>Never</span></label>
+                            <label class="intake-radio"><input type="radio" name="drug-status" value="quit"> <span>Quit</span></label>
+                            <label class="intake-radio"><input type="radio" name="drug-status" value="current"> <span>Current</span></label>
+                        </div>
+                        <input type="text" name="drug-year-quit" class="form__input form__input--sm" placeholder="Year quit">
+                        <input type="text" name="drug-type" class="form__input form__input--sm" placeholder="Type">
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="occupation" class="form__label">Occupation</label>
+                            <input type="text" id="occupation" name="occupation" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <span class="form__label">Marital Status</span>
+                            <div class="intake-radio-row">
+                                <label class="intake-radio"><input type="radio" name="marital-status" value="single"> <span>Single</span></label>
+                                <label class="intake-radio"><input type="radio" name="marital-status" value="married"> <span>Married</span></label>
+                                <label class="intake-radio"><input type="radio" name="marital-status" value="separated"> <span>Separated</span></label>
+                                <label class="intake-radio"><input type="radio" name="marital-status" value="divorced"> <span>Divorced</span></label>
+                                <label class="intake-radio"><input type="radio" name="marital-status" value="widowed"> <span>Widowed</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="other-info" class="form__label">Any other pertinent information</label>
+                        <textarea id="other-info" name="other-info" class="form__textarea" rows="3"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Consents -->
+                <fieldset class="intake-section">
+                    <legend class="intake-section__title">Acknowledgements & Consent</legend>
+
+                    <div class="intake-consent">
+                        <h3 class="intake-consent__title">Medical Information Release</h3>
+                        <p>I acknowledge that I have been offered a copy of the NOTICE OF PRIVACY POLICY of <strong>Treasure Valley Foot and Ankle</strong> ("TVFA") and that TVFA may release all or portions of my medical record to me, and to people or companies responsible to pay the charges for my care, such as my insurance or health benefits companies, or worker's compensation carriers. I further acknowledge that TVFA may disclose my patient information to referring or treating health care providers, and for payment and health care operations. I hereby authorize TVFA to obtain my medical information from other health care entities and providers, including but not limited to, copies of lab results, diagnostic test reports, film/images, and other clinic information deemed necessary by TVFA physicians or representatives. I understand that I may inspect my protected health information, request more information, and revoke this authorization, as permitted by the federal privacy regulations and in accordance with TVFA's privacy policy.</p>
+                    </div>
+
+                    <div class="intake-consent">
+                        <h3 class="intake-consent__title">Consent for Treatment</h3>
+                        <p>I hereby consent to the medical treatment, diagnostic, and laboratory tests, and other procedures, which the physician(s) may deem advisable in treatment of my case (or as legal guardian for patient). TVFA will determine the proper disposition of any tissues, parts, or body fluids consistent with state and federal laws. This agreement will remain in effect until I choose to revoke it in writing.</p>
+                    </div>
+
+                    <div class="intake-consent">
+                        <h3 class="intake-consent__title">Financial Responsibility and Agreement</h3>
+                        <p>I hereby authorize any benefits due me to be paid directly to Treasure Valley Foot and Ankle. I understand and agree that I am financially responsible for all deductible amounts, co-insurance, co-pay or non-covered services or services deemed as "non-medically necessary" by my third party insurance carrier which could include orthotics, braces, splints, over-the-counter medications, heel cups, pads, toe separators, etc. I agree that I am responsible for satisfying any conditions necessary for insurance or health benefits, including obtaining a valid referral from my primary care physician, if necessary. All delinquent accounts will be charged an interest rate of 1.5% per month, 18% per annum. In the event any balance is not paid as agreed, I agree to pay a collection fee and all costs of collection. In the event of a lawsuit to collect the unpaid balance, I further agree to pay court costs and reasonable attorney fees. I agree to permit TVFA to service my account or to collect any amounts I may owe, and to contact me by telephone at any telephone number associated with my account, including wireless telephone numbers, which could result in charges to me. TVFA may also contact me by sending text messages or e-mails, using any email address I provide to them. Methods of contact may include using pre-recorded/artificial voice messages and/or use of an automated dialing device, as applicable. In consideration for medical services rendered, I acknowledge that I have access to TVFA's financial policy and agree to pay for said medical services according to such terms. To the best of my knowledge, I have answered the questions on this form accurately. I understand that providing incorrect information can be dangerous to my health. I understand that it is my responsibility to inform the doctor and office staff of any changes in my medical status.</p>
+                    </div>
+
+                    <label class="intake-checkbox intake-checkbox--emphasis">
+                        <input type="checkbox" name="consent-acknowledged" required>
+                        <span>I have read and agree to the acknowledgements and consents above. *</span>
+                    </label>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="signature" class="form__label">Patient / Responsible Party Signature *</label>
+                            <input type="text" id="signature" name="signature" class="form__input intake-signature" required placeholder="Type your full legal name">
+                            <p class="intake-help">Typing your name here serves as your electronic signature.</p>
+                        </div>
+                        <div class="form__group">
+                            <label for="signature-date" class="form__label">Date *</label>
+                            <input type="date" id="signature-date" name="signature-date" class="form__input" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="intake-actions">
+                    <button type="submit" class="btn btn--primary btn--lg">
+                        Submit Intake Form
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn--secondary btn--lg" id="intake-print">
+                        Print Form
+                    </button>
+                </div>
+
+                <p class="form__note">
+                    * Required fields. Your information is kept confidential. If you have trouble submitting,
+                    please call us at <a href="tel:208-272-9253">(208) 272-9253</a>.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <img src="images/tvfa-logo-horizontal.avif" alt="Treasure Valley Foot & Ankle" class="footer__logo-img">
+                    </a>
+                    <p class="footer__description">
+                        Meridian's premiere podiatry clinic providing expert foot and ankle
+                        care to the greater Boise area. Family-owned practice with a commitment
+                        to patient excellence.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/Dr.ClarkJohnson/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/treasurevalleyfootandankle/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#insurance">Insurance</a></li>
+                        <li><a href="meet-the-doctor.html">Meet Dr. Johnson</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="services/bunion-treatment.html">Bunion Treatment</a></li>
+                        <li><a href="services/plantar-fasciitis.html">Plantar Fasciitis</a></li>
+                        <li><a href="services/custom-orthotics.html">Custom Orthotics</a></li>
+                        <li><a href="services/foot-ankle-injuries.html">Sports Injuries</a></li>
+                        <li><a href="services/diabetic-foot-care.html">Diabetic Foot Care</a></li>
+                        <li><a href="services/foot-ankle-surgery.html">Foot & Ankle Surgery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact Us</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>3120 W Belltower Dr, Ste 100<br>Meridian, ID 83646</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <a href="tel:208-272-9253">(208) 272-9253</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:info@treasurevalleyfootandankle.com">info@treasurevalleyfootandankle.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 Treasure Valley Foot & Ankle. All rights reserved.
+                </p>
+                <p class="footer__credit">
+                    Website by <a href="https://emeraldbeacon.com" target="_blank" rel="noopener noreferrer">Emerald Beacon</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
