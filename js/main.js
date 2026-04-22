@@ -318,6 +318,80 @@ function showFormMessage(type, message) {
 }
 
 // ========================================
+// New Patient Intake Form
+// ========================================
+
+const intakeForm = document.getElementById('intake-form');
+const intakePrintBtn = document.getElementById('intake-print');
+
+if (intakeForm) {
+    intakeForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        if (!this.checkValidity()) {
+            this.reportValidity();
+            return;
+        }
+
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Submitting...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(this);
+        const body = new URLSearchParams(formData).toString();
+
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: body
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Submission failed (' + response.status + ')');
+                }
+                showIntakeMessage('success', 'Thank you! Your intake form has been submitted. Our team will review it before your visit and follow up if we need anything else.');
+                this.reset();
+                window.scrollTo({ top: intakeForm.offsetTop - 100, behavior: 'smooth' });
+            })
+            .catch((err) => {
+                console.error('Intake form submission error:', err);
+                showIntakeMessage('error', "We couldn't submit your form. Please try again, or call us at (208) 272-9253 so we can help.");
+            })
+            .finally(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+    });
+}
+
+if (intakePrintBtn) {
+    intakePrintBtn.addEventListener('click', () => window.print());
+}
+
+function showIntakeMessage(type, message) {
+    if (!intakeForm) return;
+
+    const existing = intakeForm.querySelector('.form-message');
+    if (existing) existing.remove();
+
+    const messageEl = document.createElement('div');
+    messageEl.className = `form-message form-message--${type}`;
+    messageEl.innerHTML = message;
+    messageEl.style.cssText = `
+        padding: 1rem 1.25rem;
+        margin-bottom: 1.5rem;
+        border-radius: 0.5rem;
+        font-size: 0.95rem;
+        ${type === 'success'
+            ? 'background: #d4edda; color: #155724; border: 1px solid #c3e6cb;'
+            : 'background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;'}
+    `;
+
+    intakeForm.insertBefore(messageEl, intakeForm.firstChild);
+}
+
+// ========================================
 // Phone Number Formatting
 // ========================================
 
