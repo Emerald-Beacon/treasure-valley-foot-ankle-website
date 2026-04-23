@@ -231,18 +231,30 @@ if (contactForm) {
         submitBtn.innerHTML = 'Sending...';
         submitBtn.disabled = true;
 
-        // Simulate form submission (replace with actual endpoint)
-        setTimeout(() => {
-            // Show success message
-            showFormMessage('success', 'Thank you! We will contact you within 24 hours to confirm your appointment.');
-
-            // Reset form
-            this.reset();
-
+        // Submit to Netlify
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(response => {
+            if (response.ok) {
+                // Show success message
+                showFormMessage('success', 'Thank you! We will contact you within 24 hours to confirm your appointment.');
+                // Reset form
+                this.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(error => {
+            showFormMessage('error', 'There was an error submitting your request. Please try again or call us directly.');
+        })
+        .finally(() => {
             // Reset button
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-        }, 1500);
+        });
     });
 }
 

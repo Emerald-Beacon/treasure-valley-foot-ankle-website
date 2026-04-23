@@ -749,7 +749,8 @@
                 </div>
 
                 <div class="contact__form-wrapper">
-                    <form class="contact__form" id="contact-form">
+                    <form class="contact__form" id="contact-form" name="appointment-request" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="appointment-request">
                         <h3 class="contact__form-title">Request an Appointment</h3>
 
                         <div class="form__group">
