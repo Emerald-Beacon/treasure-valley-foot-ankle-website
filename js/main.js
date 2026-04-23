@@ -239,19 +239,13 @@ if (contactForm) {
         })
         .then(response => {
             if (response.ok) {
-                // Show success message
-                showFormMessage('success', 'Thank you! We will contact you within 24 hours to confirm your appointment.');
-                // Reset form
-                this.reset();
+                window.location.href = '/thank-you.html';
             } else {
                 throw new Error('Form submission failed');
             }
         })
         .catch(error => {
             showFormMessage('error', 'There was an error submitting your request. Please try again or call us directly.');
-        })
-        .finally(() => {
-            // Reset button
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
         });
