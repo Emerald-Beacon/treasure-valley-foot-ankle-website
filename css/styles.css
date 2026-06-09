@@ -4016,6 +4016,71 @@ img {
     top: 0;
 }
 
+/* Blog comparison table */
+.blog-table-wrap {
+    overflow-x: auto;
+    margin: var(--space-8) 0;
+}
+
+.blog-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+    min-width: 560px;
+}
+
+.blog-table th,
+.blog-table td {
+    text-align: left;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    vertical-align: top;
+    line-height: 1.5;
+    color: var(--color-text-light);
+}
+
+.blog-table thead th {
+    background: var(--color-primary);
+    color: #fff;
+    font-weight: 600;
+    font-family: var(--font-body);
+}
+
+.blog-table tbody th {
+    background: var(--color-bg-alt);
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.blog-table tbody tr:nth-child(even) td {
+    background: var(--color-bg-alt);
+}
+
+/* Blog FAQ */
+.blog-faq {
+    margin-top: var(--space-10);
+}
+
+.blog-faq__item {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-5) var(--space-6);
+    margin-bottom: var(--space-4);
+    background: var(--color-bg);
+}
+
+.blog-faq__item h3 {
+    font-family: var(--font-body) !important;
+    font-size: var(--text-lg) !important;
+    margin: 0 0 var(--space-2) !important;
+    color: var(--color-text) !important;
+}
+
+.blog-faq__item p {
+    font-size: var(--text-base) !important;
+    margin-bottom: 0 !important;
+}
+
 @media (max-width: 900px) {
     .blog-grid {
         grid-template-columns: repeat(2, 1fr);
