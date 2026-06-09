@@ -52,7 +52,7 @@ Dr. Johnson byline, strong internal linking, and conversion CTA to
 
 | # | Publish Date | Status | Title | Slug | Cluster | Template | Primary Keyword | Internal Links | Tag |
 |---|--------------|--------|-------|------|---------|----------|-----------------|----------------|-----|
-| 1 | Thu Jun 11 2026 | pending | Ingrown Toenail: Home Care vs. When to See a Podiatrist | ingrown-toenail-home-care-vs-podiatrist | C | faq-knowledge | ingrown toenail treatment boise | foot-ankle-injuries, diabetic-foot-care | Toe & Nail Care |
+| 1 | Thu Jun 11 2026 | published | Ingrown Toenail: Home Care vs. When to See a Podiatrist | ingrown-toenail-home-care-vs-podiatrist | C | faq-knowledge | ingrown toenail treatment boise | foot-ankle-injuries, diabetic-foot-care | Toe & Nail Care |
 | 2 | Tue Jun 16 2026 | pending | Do I Really Need Custom Orthotics? A Meridian Podiatrist's Honest Answer | do-i-need-custom-orthotics | B | comparison | are custom orthotics worth it | custom-orthotics, plantar-fasciitis, foot-ankle-injuries | Orthotics |
 | 3 | Thu Jun 18 2026 | pending | Gardening Season Foot Strain: Why Your Arches Ache After a Day in the Yard | gardening-season-foot-strain | Seasonal | how-to-guide | foot pain after gardening | plantar-fasciitis, custom-orthotics | Summer Foot Care |
 | 4 | Tue Jun 23 2026 | pending | Heel Pain in 2026: Why Your Heel Hurts and How a Boise Podiatrist Treats It | heel-pain-complete-guide-2026 | B | pillar-page | heel pain treatment near me | plantar-fasciitis, heel-pain, heel-spurs, heel-injections, custom-orthotics | Heel & Arch |
