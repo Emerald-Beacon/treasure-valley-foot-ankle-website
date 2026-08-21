@@ -4143,3 +4143,176 @@ img {
     }
 }
 
+
+/* ----------------------------------------
+   New Patient Paperwork (printable PDF)
+   ---------------------------------------- */
+
+.paperwork-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-12) var(--space-8);
+    text-align: center;
+}
+
+.paperwork-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--space-5);
+    border-radius: var(--radius-full);
+    background: var(--color-bg-alt);
+    color: var(--color-primary);
+}
+
+.paperwork-card__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+}
+
+.paperwork-card__text {
+    max-width: 620px;
+    margin: 0 auto var(--space-8);
+    color: var(--color-text-light);
+    font-size: var(--text-lg);
+    line-height: 1.7;
+}
+
+.paperwork-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+}
+
+.paperwork-card__meta {
+    margin-top: var(--space-5);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.paperwork-steps {
+    margin-top: var(--space-12);
+}
+
+.paperwork-steps__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+.paperwork-steps__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    padding: 0;
+    margin: 0;
+}
+
+.paperwork-step {
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+}
+
+.paperwork-step__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: var(--space-4);
+    border-radius: var(--radius-full);
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: var(--text-lg);
+}
+
+.paperwork-step__title {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+}
+
+.paperwork-step__body p {
+    color: var(--color-text-light);
+    font-size: var(--text-base);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.paperwork-note {
+    margin-top: var(--space-8);
+    padding: var(--space-6);
+    border-left: 4px solid var(--color-secondary);
+    border-radius: var(--radius);
+    background: var(--color-bg-warm);
+}
+
+.paperwork-note__title {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+}
+
+.paperwork-note p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.paperwork-help {
+    margin-top: var(--space-12);
+    text-align: center;
+}
+
+.paperwork-help__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+}
+
+.paperwork-help p {
+    color: var(--color-text-light);
+    margin-bottom: var(--space-6);
+}
+
+.paperwork-help__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .paperwork-steps__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .paperwork-card {
+        padding: var(--space-8) var(--space-5);
+    }
+
+    .paperwork-card__title {
+        font-size: var(--text-2xl);
+    }
+
+    .paperwork-card__actions .btn,
+    .paperwork-help__actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
