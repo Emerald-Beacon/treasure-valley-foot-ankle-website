@@ -77,7 +77,7 @@ Dr. Johnson byline, strong internal linking, and conversion CTA to
 | 23 | Thu Aug 27 2026 | published | Numbness or Tingling in Your Feet? Understanding Peripheral Neuropathy | peripheral-neuropathy-numb-feet | D | how-to-guide | numbness tingling feet causes | diabetic-foot-care, tarsal-tunnel-syndrome | Diabetic Care |
 | 24 | Tue Sep 1 2026 | published | Diabetic Foot Care in the Treasure Valley: A Daily Routine That Prevents Complications | diabetic-foot-care-daily-routine | D | pillar-page | diabetic foot care | diabetic-foot-care, foot-ankle-injuries | Diabetic Care |
 | 25 | Thu Sep 3 2026 | published | Training for the City of Trees Marathon? A Podiatrist's Race-Week Foot Checklist | city-of-trees-marathon-foot-checklist | A | listicle | marathon foot prep | plantar-fasciitis, metatarsal-fractures, achilles-tendonitis, custom-orthotics | Sports Injuries |
-| 26 | Tue Sep 8 2026 | pending | Heel Injections and Advanced Heel Pain Treatments, Explained | heel-injections-advanced-treatments | B | how-to-guide | cortisone shot heel pain | heel-injections, plantar-fasciitis, heel-pain | Heel & Arch |
+| 26 | Tue Sep 8 2026 | published | Heel Injections and Advanced Heel Pain Treatments, Explained | heel-injections-advanced-treatments | B | how-to-guide | cortisone shot heel pain | heel-injections, plantar-fasciitis, heel-pain | Heel & Arch |
 | 27 | Thu Sep 10 2026 | pending | Posterior Tibial Tendonitis and Adult-Acquired Flatfoot | posterior-tibial-tendonitis-flatfoot | Tendons | how-to-guide | posterior tibial tendonitis | posterior-tibial-tendonitis, custom-orthotics, flat-feet-fallen-arches | Tendons |
 
 <!-- Internal Links column uses service-page slugs in services/<slug>.html, except
